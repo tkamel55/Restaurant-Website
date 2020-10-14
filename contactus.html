@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title> coffee day (contact)</title>
+  <link rel="stylesheet" href="css2.css" />
+  <link rel="stylesheet" href="css.css" /> 
+ <link href="https://fonts.googleapis.com/css?family=Muli|Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Please Enter Your Name!!");
+        return false;
+    }
+    var x = document.forms["myForm"]["phoneno"].value;
+    if (x == "") {
+        alert("Please Enter Your Phone Number!!");
+        return false;
+    }
+   var x = document.forms["myForm"]["emailid"].value;
+    if (x == "") {
+        alert("Please Enter Your Email!!");
+        return false;
+    }
+    var x = document.forms["myForm"]["subject"].value;
+    if (x == "") {
+        alert(" Please Fill in something in the Enquiry box!! ");
+        return false;
+    }
+   
+}
+</script>
+
+</head>
+<body>
+<header> 
+          <div class= "space"> 
+          <div class ="logo"> 
+          <a href= "home.html"> Coffee
+          <br /> day </a>
+         </div>   
+       </div>
+       
+        <ul> 
+            <li> <a href="home.html"> HOME </a></li>
+            <li> <a href="about.html">ABOUT </a></li>
+            <li> <a href="pricing.html">PRICING </a></li>
+             <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">MORE</a>
+               <div class="dropdown-content">
+                     <a href="drinks.html">Drinks</a>
+                     <a href="dessert.html">Desserts</a>
+                   </div>
+                   </li>
+            <li> <a href="contactus.html"> CONTACT US </a></li>
+         </ul>
+     </header>
+     <h2> <center> Fill in your Personal Information </center></h2>
+ <div class="container">
+  <form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post" >
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+    
+     <label for="phoneno">Phone Number</label>
+     </br>
+     <input type="tel" class = "phone" id = "phoneno" placeholder = " Type in your contact number...">
+      </br>
+      
+     <label for="email">Email</label>
+       </br>
+     <input type="email" class = "mail" id="emailid" placeholder = " Type in your email address...">
+       </br>
+     
+     
+    
+    <label for="subject">Enquiry</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+    
+    <label for ="date"> Date of submission </label>
+    </br>
+    <input type="date" class=dates id="datesubmission">     
+    </br>
+    </br>
+   <input type="submit"  value="Submit"> 
+   
+    
+    <input type="reset" value=" Reset " > 
+    
+
+  </form>
+</div>
+
+
+   <footer> 
+     <p> Copyright &copy; 2017 Made by Kamel Mohamed</p> 
+  </footer> 
+</body>
+</html>

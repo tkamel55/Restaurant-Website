@@ -1,0 +1,165 @@
+html { 
+     background: black;
+}  
+
+body  {
+     background: white; 
+     font-family: 'Muli', sans-serif;
+     line-height: 1.5em; 
+}
+
+header {
+      text-align : center;
+      background: url(images/slide2.jpg);
+      background-size: cover;
+      color: white;
+}
+
+.space { 
+       height: 350px;
+}
+
+ul { 
+   padding: 10px; 
+   background: rgba(0,0,0,0.5);
+}
+
+li { 
+  display: inline ; 
+  padding : 0px 30px 0px 30px;
+}
+
+a { 
+  color: white ; 
+  text-decoration: none;
+}
+
+a:hover { 
+   color: #afafaf; 
+ }
+.logo { 
+    font-family: 'Rock Salt', cursive;
+    float:left;
+    font-size: 65px ; 
+    line-height: 1.85em;
+    margin-left: 7%;
+    padding-top: 50px; 
+    text-shadow: 5px 5px 20px black;   
+}
+
+article { 
+   max-width: 768px; 
+   padding: 20px ; 
+   margin: 0 auto; 
+
+   } 
+
+img 
+{ 
+ max-width: 600px; 
+ margin-top: -5%;
+
+}
+
+footer
+{ 
+  background:black; 
+  color: white; 
+  font-size: 0.75em; 
+  text-align: center; 
+  padding :10px;
+}
+
+@media (max-width: 768px) 
+{ 
+   .space { 
+       height: 180px ;
+ }
+
+   .logo { 
+       font-size: 50px ;
+       padding-top: 30px; 
+       line-height: 1.65em;
+}
+
+   h2 { 
+   font-size: 2em; 
+}
+
+   li { 
+      padding: 5px ; 
+      display: block;
+}
+
+  img { 
+     max-width: 430px;
+  }
+
+}
+
+@media (max-width: 430px) 
+{ 
+  .space { 
+    height: 100px;
+}
+
+   .logo { 
+       font-size: 30px ;
+       padding-top: 15px; 
+       line-height: 1.5em;
+ }
+
+    h2 { 
+      font-size: 1.5em; 
+       } 
+
+    img { 
+       max-width: 260px ;
+       
+  } 
+
+} 
+
+.logo2 { 
+  max-height: 100px;
+  max-width: 100px;
+  float: left;
+}
+
+.page{ 
+   color: #000000;
+}
+
+
+
+//drop down list for more tab
+
+li.dropdown {
+    display: inline-block;
+  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+   background: rgba(0,0,0,0.5);
+    padding: 5px ; 
+    
+ 
+}
+
+.dropdown-content a {
+ 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+}
+.dropdown-content a:hover { background: rgba(0,0,0,0.5);}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+
+
